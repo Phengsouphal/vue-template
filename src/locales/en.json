@@ -1,0 +1,20 @@
+{
+  "message": "hello i18n !!",
+  "message.helo": "Hello guy!",
+  "homepage": "Home page",
+  "skill": "Skill",
+  "about": "About",
+  "experience": "Experience",
+  "education": "Education",
+  "contact": "Contact",
+  "drop_me_contact": "Drop me an email or connect via LinkedIn! I'd be glad to hear from you!",
+  "contact_me": "Contact Me",
+  "hello_there": "Hello There",
+  "backend": "Backend",
+  "frontend": "Frontend",
+  "mobile": "Mobile",
+  "db_management": "DB Management",
+  "tool_design": "Tool Design",
+  "other": "Other",
+  "my_resume": "My Resume"
+}
