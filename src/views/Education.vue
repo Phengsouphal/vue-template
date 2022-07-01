@@ -133,21 +133,6 @@
                 </div>
               </div>
             </a-collapse-panel>
-            <!-- <a-collapse-panel key="2" header="This is panel header 2">
-              <div class="">
-                <p class="mb-0">Html</p>
-                <a-progress
-                  :stroke-color="{
-                    '0%': '#5cf4fe',
-                    '100%': '#4daffe',
-                  }"
-                  :trailColor="'#3d3d3d'"
-                  :percent="80"
-                  :showInfo="false"
-                  :strokeWidth="10"
-                />
-              </div>
-            </a-collapse-panel> -->
           </a-collapse>
         </div>
         <div class="flex flex-col items-center justify-center w-1/4">
@@ -158,14 +143,187 @@
       </div>
     </div>
   </div>
+
   <div class="container m-auto">
-    <div class="w-full flex flex-row mb-3">
-      <div class="w-3/12 h-10 bg-orange-400">
-        <div
-          class="h-full w-1/2 bg-emerald-900 transform hover:translate-x-full duration-1000"
-        ></div>
+    <h2
+      class="text-3xl font-bold text-center py-3 text-transparent bg-clip-text bg-gradient-to-r from-light-blue-green to-light-blue"
+    >
+      {{ $t("work_experience") }}
+    </h2>
+    <div class="w-full flex flex-row mb-3 bg-white rounded-xl">
+      <div
+        class="text-slate-700 text-lg w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue-green to-light-blue rounded-tl-xl rounded-bl-xl border-r"
+        data-aos="fade-right"
+      >
+        <p class="mb-0 font-bold my-1">Software Engineer</p>
+        <p class="mb-0 my-1">September 2021 - Present</p>
+
+        <a href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/">
+          <p class="mb-0 my-1 text-slate-700">VTech CO.,LTD</p>
+        </a>
       </div>
-      <div class="w-9/12 h-10 bg-blue-700"></div>
+      <div
+        class="text-slate-700 text-lg w-9/12 bg-gradient-to-r from-light-blue to-light-blue-green p-5 rounded-tr-xl rounded-br-xl border-l"
+        data-aos="fade-left"
+      >
+        <p class="mb-0 my-1">
+          - I'm currently working for VTehc to build Livestream profile and will
+          show football live and other game.
+        </p>
+        <p class="mb-0 my-1">
+          - <span class="font-semibold">Private Project </span>(API and admin
+          panel are confidential of company)
+        </p>
+        <p class="mb-0 my-1">
+          - Technologies used:<span class="font-semibold">
+            NestJs, ReactJs, Tailwind, Ant Design, PHP
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="w-full flex flex-row mb-3 bg-white rounded-xl mt-5">
+      <div
+        class="text-slate-700 text-lg w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue-green to-light-blue rounded-tl-xl rounded-bl-xl border-r"
+        data-aos="fade-right"
+      >
+        <p class="mb-0 font-bold my-1">Mobile and Web developer</p>
+        <p class="mb-0 my-1">December 2019 - October 2021</p>
+
+        <p class="mb-0 my-1 text-slate-700">Freelancer</p>
+      </div>
+      <div
+        class="text-slate-700 text-lg w-9/12 bg-gradient-to-r from-light-blue to-light-blue-green p-5 rounded-tr-xl rounded-br-xl border-l"
+        data-aos="fade-left"
+      >
+        <p class="mb-0 my-1">
+          - I've worked on a various freelance project. I've develop a mobile
+          app, a web application and scrape data project.
+        </p>
+        <p class="mb-0 my-1">
+          - <span class="font-semibold">Public Project Reference</span> <br />
+
+          <span class="ml-5">
+            +
+            <a href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/"
+              ><span class="font-semibold">Oakas App </span></a
+            >
+            - This project is about posting job for disable people to find their
+            job. (Backend and API) </span
+          ><br />
+          <span class="ml-5">
+            +
+            <a href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/">
+              <span class="font-semibold">GOGO Express Partner </span>
+            </a>
+            - This project for partner of GOGO Express company. They can upload
+            their product and GOGO express Driver can go and pick up their
+            project and delivery to customer. (ReactNative) </span
+          ><br />
+          <span class="ml-5">
+            +
+
+            <span class="font-semibold">Scrape Data Project </span> - Scrape
+            Data from a website and insert to database and send mail to email.
+            (Python + PHP + Trello API)
+          </span>
+        </p>
+        <p class="mb-0 my-1">
+          - Technologies used:
+          <span class="font-semibold">
+            Laravel, PHP, Firebase, Python, React Native
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="w-full flex flex-row mb-3 bg-white rounded-xl">
+      <div
+        class="text-slate-700 text-lg w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue-green to-light-blue rounded-tl-xl rounded-bl-xl border-r"
+        data-aos="fade-right"
+      >
+        <p class="mb-0 font-bold my-1">Mobile and Web developer</p>
+        <p class="mb-0 my-1">September 2021 - Present</p>
+
+        <a href="https://bi-kay.com/">
+          <p class="mb-0 my-1 text-slate-700">Bikay Company</p>
+        </a>
+      </div>
+      <div
+        class="text-slate-700 text-lg w-9/12 bg-gradient-to-r from-light-blue to-light-blue-green p-5 rounded-tr-xl rounded-br-xl border-l"
+        data-aos="fade-left"
+      >
+        <p class="mb-0 my-1">
+          - I've worked for a year at Bikay company located in Phnom Penh. I've
+          develop 2 mobile app, and 2 web application include backend.
+        </p>
+        <p class="mb-0 my-1">
+          - <span class="font-semibold">Public Project Reference</span> <br />
+
+          <span class="ml-5">
+            +
+            <a href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/"
+              ><span class="font-semibold">Angkor Salad App </span></a
+            >
+            - Farmer, Collector and Dealer can find each in this app and Farmer
+            can know how to grow some vegetable base instruction.
+            (ReactNative)</span
+          ><br />
+          <span class="ml-5">
+            +
+            <a href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/">
+              <span class="font-semibold">Waste Tracker </span>
+            </a>
+            - You can find out information about garbage collection schedule,
+            collection services,and best practices of waste disposal in select
+            Cambodian cities. (ReactNative) </span
+          ><br />
+          <span class="ml-5">
+            +
+
+            <span class="font-semibold">Two Project </span> - Backend (Laravel
+            with Firebase)
+          </span>
+        </p>
+        <p class="mb-0 my-1">
+          - Technologies used:
+          <span class="font-semibold">
+            Laravel, PHP, Firebase, React Native
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="w-full flex flex-row mb-3 bg-white rounded-xl">
+      <div
+        class="text-slate-700 text-lg w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue-green to-light-blue rounded-tl-xl rounded-bl-xl border-r"
+        data-aos="fade-right"
+      >
+        <p class="mb-0 font-bold my-1">Web developer</p>
+        <p class="mb-0 my-1">February 2018 - November 2019</p>
+
+        <a href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/">
+          <p class="mb-0 my-1 text-slate-700">VTech CO.,LTD</p>
+        </a>
+      </div>
+      <div
+        class="text-slate-700 text-lg w-9/12 bg-gradient-to-r from-light-blue to-light-blue-green p-5 rounded-tr-xl rounded-br-xl border-l"
+        data-aos="fade-left"
+      >
+        <p class="mb-0 my-1">
+          - I've worked almost 1 year for a Iota Asia company located in the
+          Phnom Penh.
+        </p>
+        <p class="mb-0 my-1">
+          - <span class="font-semibold">Private Project </span>(API and admin
+          panel are confidential of company)
+        </p>
+        <p class="mb-0 my-1">
+          - Technologies used:<span class="font-semibold">
+            JAVA, Vaadin Framework, Html, Css, Javascript
+          </span>
+        </p>
+      </div>
     </div>
   </div>
 
@@ -472,16 +630,5 @@ export default {
 
 .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
   vertical-align: middle;
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 </style>
