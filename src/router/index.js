@@ -1,7 +1,7 @@
 // import Skill from "../views/Skill.vue";
 // import About from "../views/About.vue";
 // import Contact from "../views/Contact.vue";
-import Experience from "../views/Experience.vue";
+import Education from "../views/Education.vue";
 // import Education from "../views/Education.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
@@ -10,7 +10,7 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Experience,
+    component: Education,
   },
   // {
   //   path: "/skill",
@@ -35,7 +35,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes,
   linkActiveClass: "menu-active",
 });
