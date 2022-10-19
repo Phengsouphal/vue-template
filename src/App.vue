@@ -1,14 +1,11 @@
 <template>
-  <Header />
   <!-- <div class="h-14" /> -->
-  <div class="bg-slate-900">
+  <div class="bg-slate-900" @scroll="handleScroll">
     <router-view />
   </div>
 </template>
 
 <script>
-import Header from "./components/Header/Header.vue";
-
 export default {
   name: "App",
   data() {
@@ -16,9 +13,7 @@ export default {
       key: "",
     };
   },
-  components: {
-    Header,
-  },
+
   methods: {
     onChangeLanguages(event) {
       const lang = event.target.value;

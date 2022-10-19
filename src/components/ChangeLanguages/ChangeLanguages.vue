@@ -37,7 +37,6 @@ export default {
   },
   methods: {
     handleChange(value) {
-      console.log(`selected ${value}`);
       const lang = value;
       this.$i18n.locale = lang;
       localStorage.setItem("language", lang);
