@@ -154,7 +154,9 @@
             </div>
             <div class="flex flex-col items-center justify-center w-1/4">
               <a-button class="bg-red-300 resume-btn">
-                {{ $t("my_resume") }}
+                <a href="./CV.pdf" target="_blank">
+                  {{ $t("my_resume") }}
+                </a>
               </a-button>
             </div>
           </div>
