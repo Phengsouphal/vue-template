@@ -4,12 +4,12 @@
 import Experience from "../views/Experience.vue";
 // import Education from "../views/Education.vue";
 
-import { createRouter } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
-    path: "",
-    name: "/",
+    path: "/",
+    name: "Home",
     component: Experience,
   },
   // {
@@ -35,6 +35,7 @@ const routes = [
 ];
 
 const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
   linkActiveClass: "menu-active",
 });
