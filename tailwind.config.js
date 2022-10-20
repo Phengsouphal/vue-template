@@ -6,7 +6,8 @@ module.exports = {
     },
     extend: {
       height: {
-        128: "32rem",
+        "32-rm": "32rem",
+        "40-rm": "40rem",
       },
       colors: {
         "light-blue-green": "#5cf4fe",

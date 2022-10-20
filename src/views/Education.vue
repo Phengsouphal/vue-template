@@ -3,13 +3,16 @@
     <div class="relative">
       <Header @go-section="goToSection" ref="header" />
 
-      <img src="../assets/bg2.webp" class="w-full h-128" alt="bg" />
-      <div class="w-full bg-gray-800 opacity-50 h-128 absolute top-0"></div>
+      <img
+        src="../assets/test.webp"
+        class="w-full h-64 sm:h-32-rm xl:h-40-rm opacity-70"
+        alt="bg"
+      />
 
       <div
-        class="profile-container flex flex-col justify-center items-center absolute top-32 left-0 right-0 mx-auto"
+        class="profile-container flex flex-col justify-center items-center absolute top-6 sm:top-32 left-0 right-0 mx-auto"
       >
-        <div class="profile" />
+        <div class="profile w-28 h-28 sm:w-36 sm:h-36" />
 
         <p
           class="text-center font-extrabold text-xl text-transparent bg-clip-text bg-gradient-to-r from-light-blue-green to-light-blue shadow-2xl shadow-white my-2"
@@ -73,9 +76,11 @@
           </h2>
 
           <div
-            class="bg-white w-full flex flex-row justify-between items-center p-5 rounded-xl"
+            class="bg-white w-full flex flex-col sm:flex-row justify-between items-center py-5 px-0 sm:px-5 rounded-xl"
           >
-            <div class="flex flex-col items-start justify-center w-3/4">
+            <div
+              class="flex flex-col items-start justify-center w-11/12 sm:w-3/4"
+            >
               <!-- <div
             v-for="(value, index) in mySkills"
             :key="index"
@@ -152,7 +157,9 @@
                 </a-collapse-panel>
               </a-collapse>
             </div>
-            <div class="flex flex-col items-center justify-center w-1/4">
+            <div
+              class="flex flex-col items-center justify-center w-1/4 mt-5 sm:mt-0"
+            >
               <a-button class="bg-red-300 resume-btn">
                 <a href="./CV.pdf" target="_blank">
                   {{ $t("my_resume") }}
@@ -171,24 +178,61 @@
         >
           {{ $t("work_experience") }}
         </h2>
-        <div class="w-full flex flex-row mb-3 bg-white rounded-xl">
+
+        <div
+          class="w-full flex flex-col sm:flex-row mb-3 bg-white rounded-xl overflow-hidden"
+        >
           <div
-            class="text-slate-700 text-lg w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue-green to-light-blue rounded-tl-xl rounded-bl-xl border-r"
+            class="text-slate-700 text-lg w-full sm:w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue to-slate-100 rounded-tl-xl rounded-tr-xl sm:rounded-bl-xl sm:rounded-tr-none sm:border-r"
             data-aos="fade-right"
           >
             <p class="mb-0 font-bold my-1">Software Engineer</p>
-            <p class="mb-0 my-1">September 2021 - Present</p>
+            <p class="mb-0 my-1">July 2022 - Present</p>
+
+            <a href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/">
+              <p class="mb-0 my-1 text-slate-700">BOIN CO.,LTD</p>
+            </a>
+          </div>
+          <div
+            class="text-slate-700 text-lg w-full sm:w-9/12 bg-gradient-to-r from-slate-100 to-light-blue p-5 sm:rounded-tr-xl sm:rounded-bl-none rounded-br-xl rounded-bl-xl sm:border-l"
+            data-aos="fade-left"
+          >
+            <p class="mb-0 my-1">
+              - I'm currently working for BOIN to build game project and car
+              management. BOIN is the exchange company of Vtech.
+            </p>
+            <p class="mb-0 my-1">
+              - <span class="font-semibold">Private Project </span>(Frontend,
+              admin panel and Mobile are confidential of company)
+            </p>
+            <p class="mb-0 my-1">
+              - Technologies used:<span class="font-semibold">
+                Vue js, Pinia, Flutter, Lua, Vant-UI,
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full flex flex-col sm:flex-row mb-3 bg-white rounded-xl overflow-hidden"
+        >
+          <div
+            class="text-slate-700 text-lg w-full sm:w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue to-slate-100 rounded-tl-xl rounded-tr-xl sm:rounded-bl-xl sm:rounded-tr-none sm:border-r"
+            data-aos="fade-right"
+          >
+            <p class="mb-0 font-bold my-1">Software Engineer</p>
+            <p class="mb-0 my-1">September 2021 - July 2022</p>
 
             <a href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/">
               <p class="mb-0 my-1 text-slate-700">VTech CO.,LTD</p>
             </a>
           </div>
           <div
-            class="text-slate-700 text-lg w-9/12 bg-gradient-to-r from-light-blue to-light-blue-green p-5 rounded-tr-xl rounded-br-xl border-l"
+            class="text-slate-700 text-lg w-full sm:w-9/12 bg-gradient-to-r from-slate-100 to-light-blue p-5 sm:rounded-tr-xl sm:rounded-bl-none rounded-br-xl rounded-bl-xl sm:border-l"
             data-aos="fade-left"
           >
             <p class="mb-0 my-1">
-              - I'm currently working for VTehc to build Livestream profile and
+              - I've worked for a year for VTech to build Livestream profile and
               will show football live and other game.
             </p>
             <p class="mb-0 my-1">
@@ -203,9 +247,11 @@
           </div>
         </div>
 
-        <div class="w-full flex flex-row mb-3 bg-white rounded-xl">
+        <div
+          class="w-full flex flex-col sm:flex-row mb-3 bg-white rounded-xl overflow-hidden"
+        >
           <div
-            class="text-slate-700 text-lg w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue-green to-light-blue rounded-tl-xl rounded-bl-xl border-r"
+            class="text-slate-700 text-lg w-full sm:w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue to-slate-100 rounded-tl-xl rounded-tr-xl sm:rounded-bl-xl sm:rounded-tr-none sm:border-r"
             data-aos="fade-right"
           >
             <p class="mb-0 font-bold my-1">Mobile and Web developer</p>
@@ -214,7 +260,7 @@
             <p class="mb-0 my-1 text-slate-700">Freelancer</p>
           </div>
           <div
-            class="text-slate-700 text-lg w-9/12 bg-gradient-to-r from-light-blue to-light-blue-green p-5 rounded-tr-xl rounded-br-xl border-l"
+            class="text-slate-700 text-lg w-full sm:w-9/12 bg-gradient-to-r from-slate-100 to-light-blue p-5 sm:rounded-tr-xl sm:rounded-bl-none rounded-br-xl rounded-bl-xl sm:border-l"
             data-aos="fade-left"
           >
             <p class="mb-0 my-1">
@@ -227,8 +273,7 @@
 
               <span class="ml-5">
                 +
-                <a
-                  href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/"
+                <a href="https://oakas.app/login"
                   ><span class="font-semibold">Oakas App </span></a
                 >
                 - This project is about posting job for disable people to find
@@ -237,7 +282,7 @@
               <span class="ml-5">
                 +
                 <a
-                  href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/"
+                  href="https://play.google.com/store/apps/details?id=com.gogo.expresspartner"
                 >
                   <span class="font-semibold">GOGO Express Partner </span>
                 </a>
@@ -262,9 +307,11 @@
           </div>
         </div>
 
-        <div class="w-full flex flex-row mb-3 bg-white rounded-xl">
+        <div
+          class="w-full flex flex-col sm:flex-row mb-3 bg-white rounded-xl overflow-hidden"
+        >
           <div
-            class="text-slate-700 text-lg w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue-green to-light-blue rounded-tl-xl rounded-bl-xl border-r"
+            class="text-slate-700 text-lg w-full sm:w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue to-slate-100 rounded-tl-xl rounded-tr-xl sm:rounded-bl-xl sm:rounded-tr-none sm:border-r"
             data-aos="fade-right"
           >
             <p class="mb-0 font-bold my-1">Mobile and Web developer</p>
@@ -275,7 +322,7 @@
             </a>
           </div>
           <div
-            class="text-slate-700 text-lg w-9/12 bg-gradient-to-r from-light-blue to-light-blue-green p-5 rounded-tr-xl rounded-br-xl border-l"
+            class="text-slate-700 text-lg w-full sm:w-9/12 bg-gradient-to-r from-slate-100 to-light-blue p-5 sm:rounded-tr-xl sm:rounded-bl-none rounded-br-xl rounded-bl-xl sm:border-l"
             data-aos="fade-left"
           >
             <p class="mb-0 my-1">
@@ -289,7 +336,7 @@
               <span class="ml-5">
                 +
                 <a
-                  href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/"
+                  href="https://play.google.com/store/apps/details?id=com.angkor_salad"
                   ><span class="font-semibold">Angkor Salad App </span></a
                 >
                 - Farmer, Collector and Dealer can find each in this app and
@@ -299,7 +346,7 @@
               <span class="ml-5">
                 +
                 <a
-                  href="https://www.linkedin.com/company/vtech-co-ltd/mycompany/"
+                  href="https://play.google.com/store/apps/details?id=com.swapapp"
                 >
                   <span class="font-semibold">Waste Tracker </span>
                 </a>
@@ -323,9 +370,11 @@
           </div>
         </div>
 
-        <div class="w-full flex flex-row mb-3 bg-white rounded-xl">
+        <div
+          class="w-full flex flex-col sm:flex-row mb-3 bg-white rounded-xl overflow-hidden"
+        >
           <div
-            class="text-slate-700 text-lg w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue-green to-light-blue rounded-tl-xl rounded-bl-xl border-r"
+            class="text-slate-700 text-lg w-full sm:w-3/12 flex flex-col justify-center items-center p-5 bg-gradient-to-r from-light-blue to-slate-100 rounded-tl-xl rounded-tr-xl sm:rounded-bl-xl sm:rounded-tr-none sm:border-r"
             data-aos="fade-right"
           >
             <p class="mb-0 font-bold my-1">Web developer</p>
@@ -336,7 +385,7 @@
             </a>
           </div>
           <div
-            class="text-slate-700 text-lg w-9/12 bg-gradient-to-r from-light-blue to-light-blue-green p-5 rounded-tr-xl rounded-br-xl border-l"
+            class="text-slate-700 text-lg w-full sm:w-9/12 bg-gradient-to-r from-slate-100 to-light-blue p-5 sm:rounded-tr-xl sm:rounded-bl-none rounded-br-xl rounded-bl-xl sm:border-l"
             data-aos="fade-left"
           >
             <p class="mb-0 my-1">
@@ -381,6 +430,22 @@
         </div>
       </div>
     </section>
+
+    <div
+      data-aos="zoom-in"
+      v-show="hideShowTopIcon"
+      class="fixed bottom-10 right-8"
+    >
+      <a-button @click="goUp()" type="primary" shape="circle" class="btn-up">
+        <template #icon>
+          <img
+            src="../assets/icons/upward-arrow.svg"
+            class="w-8 h-8 rounded-lg"
+            alt="bg"
+          />
+        </template>
+      </a-button>
+    </div>
   </div>
 </template>
 
@@ -405,6 +470,14 @@ export default {
       window.scrollTo(0, top);
     },
 
+    goUp() {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    },
+
     goToSection(value) {
       const top = this.$refs[value].offsetTop;
       window.scrollTo({
@@ -424,6 +497,12 @@ export default {
         this.$refs["experience"].offsetTop;
       const contactHeight =
         this.$refs["contact"].clientHeight + this.$refs["contact"].offsetTop;
+
+      if (window.scrollY >= aboutHeight) {
+        this.hideShowTopIcon = true;
+      } else {
+        this.hideShowTopIcon = false;
+      }
 
       window.clearTimeout(isScrolling);
       isScrolling = setTimeout(() => {
@@ -726,6 +805,7 @@ export default {
 
       lastScrollPosition: 0,
       scrollValue: 0,
+      hideShowTopIcon: false,
     };
   },
 
@@ -749,11 +829,19 @@ export default {
   color: white;
   background: transparent;
 }
+
+.btn-up,
+.btn-up:hover,
+.btn-up:focus,
+.btn-up:active {
+  background: white;
+}
+
 .resume-btn,
 .resume-btn:hover,
 .resume-btn:focus,
 .resume-btn:active {
-  background: linear-gradient(to left, #5cf4fe, #4daffe);
+  background: #4daffe;
   padding: 0px 15px;
   border-radius: 20px;
 }
@@ -762,7 +850,7 @@ export default {
   width: 25px;
   height: 25px;
   margin: 0px 5px;
-  background: linear-gradient(to left, #5cf4fe, #4daffe);
+  background: #4daffe;
 }
 
 .github {
@@ -795,8 +883,6 @@ export default {
 }
 
 .profile {
-  width: 150px;
-  height: 150px;
   display: inline-block;
   border-radius: 50%;
   background-image: url(https://github.com/Phengsouphal/Phengsouphal/raw/master/PHENG_SOUPHAL.JPG);
