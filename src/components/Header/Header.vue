@@ -46,9 +46,9 @@
       </a-button>
 
       <a-drawer
+        width="50%"
         v-model:visible="visibleDrawer"
         class="custom-class"
-        style="color: red"
         :closable="false"
         placement="right"
         @after-visible-change="afterVisibleChange"
