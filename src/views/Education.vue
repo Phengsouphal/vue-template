@@ -288,7 +288,7 @@
                 </a>
                 - This project for partner of GOGO Express company. They can
                 upload their product and GOGO express Driver can go and pick up
-                their project and delivery to customer. (ReactNative) </span
+                their product and delivery to customer. (ReactNative) </span
               ><br />
               <span class="ml-5">
                 +
