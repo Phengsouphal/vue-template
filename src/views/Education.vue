@@ -315,7 +315,7 @@
             data-aos="fade-right"
           >
             <p class="mb-0 font-bold my-1">Mobile and Web developer</p>
-            <p class="mb-0 my-1">September 2021 - Present</p>
+            <p class="mb-0 my-1">September 2021 - September 2022</p>
 
             <a href="https://bi-kay.com/">
               <p class="mb-0 my-1 text-slate-700">Bikay Company</p>
